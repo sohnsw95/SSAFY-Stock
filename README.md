@@ -44,7 +44,7 @@ KIS API의 실제 시세를 활용하며, 주문은 서비스 내부의 모의 �
 아래는 주요 서비스의 책임과 이벤트 흐름을 간추린 구조입니다.
 
 ```mermaid
-flowchart LR
+flowchart TB
     UI[React 화면] --> Proxy[Nginx · HTTPS]
     Proxy --> Gateway[Spring Cloud Gateway]
     Gateway --> Core[Core · 회원 및 거래 상태]
